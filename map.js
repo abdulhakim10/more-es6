@@ -17,4 +17,13 @@ function doubleItOld(number) {
 
 const doubleIt = number => number * 2;
 const result = getDoubled(numbers);
-console.log(result);
+
+const makeDouble = numbers.map(doubleIt);
+const makeDoubleDirect = numbers.map(number => number * 2);
+const makeDoubleSimple = numbers.map(x => x * 2);
+
+const fiveTimes = [1, 2, 3, 4, 5].map(x => x * 5);
+console.log(makeDouble);
+console.log(makeDoubleDirect);
+console.log(makeDoubleSimple);
+console.log(fiveTimes);
